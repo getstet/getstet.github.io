@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>stet changelog</title>
+  <link>https://getstet.github.io/changelog</link>
+  <description>What shipped in stet, dated. One entry per feature.</description>
+  <item>
+    <title>Environments</title>
+    <link>https://getstet.github.io/changelog/environments</link>
+    <guid>https://getstet.github.io/changelog/environments</guid>
+    <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Staging and production as named store connections — never a second schema, never copied data.</description>
+  </item>
+  <item>
+    <title>Offline SEO checks</title>
+    <link>https://getstet.github.io/changelog/seo-check</link>
+    <guid>https://getstet.github.io/changelog/seo-check</guid>
+    <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+    <description>stet seo check: eight rules over committed copy, no network, no database — runs on a fork PR.</description>
+  </item>
+  <item>
+    <title>The web target</title>
+    <link>https://getstet.github.io/changelog/web-target</link>
+    <guid>https://getstet.github.io/changelog/web-target</guid>
+    <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+    <description>The target adapter seam, with the web target as its first implementation.</description>
+  </item>
+  <item>
+    <title>The CLI</title>
+    <link>https://getstet.github.io/changelog/cli</link>
+    <guid>https://getstet.github.io/changelog/cli</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+    <description>draft, publish, revert, pull and doctor from the terminal; the committed bundle and a stdlib-only Python reader.</description>
+  </item>
+  <item>
+    <title>Stores and publishing</title>
+    <link>https://getstet.github.io/changelog/store-and-publish</link>
+    <guid>https://getstet.github.io/changelog/store-and-publish</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Four store adapters behind one conformance suite; publishing as a single transaction with one-click revert.</description>
+  </item>
+  <item>
+    <title>The content core: typed keys, snapshot fallback</title>
+    <link>https://getstet.github.io/changelog/content-core</link>
+    <guid>https://getstet.github.io/changelog/content-core</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate>
+    <description>The registry, the committed snapshot, and the read path — every string a typed key with a fallback in your repo.</description>
+  </item>
+</channel></rss>
