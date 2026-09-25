@@ -13,13 +13,18 @@ draft. Leaving is one command; the repo always holds a complete copy.
 
 ## Pages
 
-- [Features](https://getstet.github.io/features.md): every launch capability — install,
+- [Features](https://getstet.xyz/features.md): every launch capability — install,
   typed keys, instant publish, snapshot fallback, versioning, environments,
   scheduling, review, preview links, editor, email slots, compliance gates,
   contacts, SEO, structured data, MCP, agent guardrails, eject, open source
-- [Pricing](https://getstet.github.io/pricing.md): Self-hosted $0 · Solo $19 · Team $39
+- [Pricing](https://getstet.xyz/pricing.md): Self-hosted $0 · Solo $19 · Team $39
   · Business $149, per month; extra projects $10/mo; reviewers are always $0
-- [Changelog](https://getstet.github.io/changelog): what shipped, dated, RSS at /rss.xml
-- [Custody](https://getstet.github.io/custody): the sub-processor inventory and the
+- [Changelog](https://getstet.xyz/changelog): what shipped, dated, RSS at /rss.xml
+- [Custody](https://getstet.xyz/custody): the sub-processor inventory and the
   eject promise
-- [Docs](https://getstet.github.io/docs): quickstart and the user guide
+- [Docs](https://getstet.xyz/docs): quickstart and the user guide
+- [Dashboard](https://getstet.xyz/docs/dashboard): `stet dev`, the local
+  dashboard — find the words, edit them beside the page, save, commit, push
+- [Plain HTML sites](https://getstet.xyz/docs/html): stet on a site that
+  is only HTML files — `data-stet` marks, `stet pull`, hand edits caught by
+  `stet check`
