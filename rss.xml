@@ -4,6 +4,20 @@
   <link>https://getstet.xyz/changelog</link>
   <description>What shipped in stet, dated. One entry per feature.</description>
   <item>
+    <title>Keys named by page and role</title>
+    <link>https://getstet.xyz/changelog/key-naming</link>
+    <guid>https://getstet.xyz/changelog/key-naming</guid>
+    <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+    <description>register names each key after where it sits and what it is; stet rename moves a key to a new name everywhere at once.</description>
+  </item>
+  <item>
+    <title>Contacts and forms</title>
+    <link>https://getstet.xyz/changelog/contacts-and-forms</link>
+    <guid>https://getstet.xyz/changelog/contacts-and-forms</guid>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
+    <description>Your own sign-up forms post to stet; each person is recorded in your own Postgres with a one-click unsubscribe.</description>
+  </item>
+  <item>
     <title>Keys that say what they are</title>
     <link>https://getstet.xyz/changelog/key-context</link>
     <guid>https://getstet.xyz/changelog/key-context</guid>

@@ -12,26 +12,26 @@ wrote stet.config.json</span>
 
 <span class="p">$</span> npx stet register --from scan
 <span class="del">- &lt;h1&gt;Roasted this week.&lt;/h1&gt;</span>
-<span class="add">+ &lt;h1 data-stet="home_headline"&gt;Roasted this week.&lt;/h1&gt;</span>
+<span class="add">+ &lt;h1 data-stet="home_page_headline"&gt;Roasted this week.&lt;/h1&gt;</span>
 <span class="c">…</span>
 <span class="m">register: run with --write to apply 13 marks across 2 documents</span>
 
 <span class="p">$</span> npx stet register --from scan --write
 <span class="m">wrote … 2 documents: 12 keys added, 1 shared</span></code></pre></div></div><div class="step" data-astro-cid-zrqag7uk><div class="txt" data-astro-cid-zrqag7uk><h2 data-astro-cid-zrqag7uk><span class="n" data-astro-cid-zrqag7uk>03</span>Change the words</h2><p data-astro-cid-zrqag7uk>Edit the value in <code data-astro-cid-zrqag7uk>content/defaults.json</code> and run <code data-astro-cid-zrqag7uk>stet pull</code>. It rewrites every marked element that shows the key, on every page. The <a href="/docs/dashboard" data-astro-cid-zrqag7uk>dashboard</a> does the same with a preview.</p><p data-astro-cid-zrqag7uk>Commit, and your deploy puts the new words live.</p></div><div class="media" data-astro-cid-zrqag7uk><pre data-astro-cid-zrqag7uk><code><span class="c"># content/defaults.json</span>
-"home_headline": "Fresh from Tuesday’s roast."
+"home_page_headline": "Fresh from Tuesday’s roast."
 
 <span class="p">$</span> npx stet pull
 <span class="m">wrote index.html</span>
 <span class="del">- &lt;h1 …&gt;Roasted this week.&lt;/h1&gt;</span>
 <span class="add">+ &lt;h1 …&gt;Fresh from Tuesday’s roast.&lt;/h1&gt;</span></code></pre></div></div><div class="step" data-astro-cid-zrqag7uk><div class="txt" data-astro-cid-zrqag7uk><h2 data-astro-cid-zrqag7uk><span class="n" data-astro-cid-zrqag7uk>04</span>Edits by hand get caught</h2><p data-astro-cid-zrqag7uk>If someone changes a marked element in the HTML directly, <code data-astro-cid-zrqag7uk>check</code> names it and says how to settle it: pull the committed copy back, or put the new text in <code data-astro-cid-zrqag7uk>defaults.json</code> to keep it. With <code data-astro-cid-zrqag7uk>stet hook install</code>, the same check runs before every commit and stops the commit until it's settled.</p></div><div class="media" data-astro-cid-zrqag7uk><pre data-astro-cid-zrqag7uk><code><span class="p">$</span> npx stet check
-<span class="m">error: index.html:14 home_shop_link differs from the snapshot</span>
+<span class="m">error: index.html:14 home_page_link_text differs from the snapshot</span>
 <span class="c">  run stet pull to apply the snapshot, or edit the</span>
 <span class="c">  snapshot to keep the page's text</span></code></pre></div></div><div class="step" data-astro-cid-zrqag7uk><div class="txt" data-astro-cid-zrqag7uk><h2 data-astro-cid-zrqag7uk><span class="n" data-astro-cid-zrqag7uk>05</span>Titles and descriptions</h2><p data-astro-cid-zrqag7uk><code data-astro-cid-zrqag7uk>pages scan --apply</code> declares each page and binds its title and meta description to the keys already marked on it, so <code data-astro-cid-zrqag7uk>seo check</code> can check them.</p><p data-astro-cid-zrqag7uk>A description that repeats a sentence from the page follows it. <code data-astro-cid-zrqag7uk>register</code> builds it from that sentence, so changing the sentence updates both.</p></div><div class="media" data-astro-cid-zrqag7uk><pre data-astro-cid-zrqag7uk><code><span class="p">$</span> npx stet pages scan --apply
 <span class="m">home (/)
-  title: bound to home_title
-  description: bound to home_description
+  title: bound to home_page_title
+  description: bound to home_meta_description
 about (/about)
-  title: bound to about_title</span></code></pre></div></div><div class="step" data-astro-cid-zrqag7uk><div class="txt" data-astro-cid-zrqag7uk><h2 data-astro-cid-zrqag7uk><span class="n" data-astro-cid-zrqag7uk>06</span>Leaving</h2><p data-astro-cid-zrqag7uk><code data-astro-cid-zrqag7uk>eject</code> takes every mark out of your pages and leaves the text exactly as it reads now. It prints its plan first, and <code data-astro-cid-zrqag7uk>--write</code> applies it.</p></div><div class="media" data-astro-cid-zrqag7uk><pre data-astro-cid-zrqag7uk><code><span class="p">$</span> npx stet eject
+  title: bound to about_page_title</span></code></pre></div></div><div class="step" data-astro-cid-zrqag7uk><div class="txt" data-astro-cid-zrqag7uk><h2 data-astro-cid-zrqag7uk><span class="n" data-astro-cid-zrqag7uk>06</span>Leaving</h2><p data-astro-cid-zrqag7uk><code data-astro-cid-zrqag7uk>eject</code> takes every mark out of your pages and leaves the text exactly as it reads now. It prints its plan first, and <code data-astro-cid-zrqag7uk>--write</code> applies it.</p></div><div class="media" data-astro-cid-zrqag7uk><pre data-astro-cid-zrqag7uk><code><span class="p">$</span> npx stet eject
 <span class="m">document: about.html — every mark removed, the text stays
 document: index.html — every mark removed, the text stays</span>
 

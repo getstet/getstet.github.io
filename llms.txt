@@ -28,3 +28,5 @@ draft. Leaving is one command; the repo always holds a complete copy.
 - [Plain HTML sites](https://getstet.xyz/docs/html): stet on a site that
   is only HTML files — `data-stet` marks, `stet pull`, hand edits caught by
   `stet check`
+- [Contacts and forms](https://getstet.xyz/docs/contacts): sign-up forms post to
+  stet; each person recorded in your own Postgres, with a one-click unsubscribe
