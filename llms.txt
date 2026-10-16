@@ -30,3 +30,9 @@ draft. Leaving is one command; the repo always holds a complete copy.
   `stet check`
 - [Contacts and forms](https://getstet.xyz/docs/contacts): sign-up forms post to
   stet; each person recorded in your own Postgres, with a one-click unsubscribe
+- [Layout](https://getstet.xyz/docs/layout): add, remove and move sections on a
+  branch — `stet check` names the keys left behind, `stet remove`,
+  `stet rename --propose`, preview, then merge
+- [Check](https://getstet.xyz/docs/check): `stet seo check` and
+  `stet audit lighthouse` — Lighthouse scores per page, each failing audit
+  tagged copy, fix or host; `--fix --write` applies the head fixes

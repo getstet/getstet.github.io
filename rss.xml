@@ -4,6 +4,20 @@
   <link>https://getstet.xyz/changelog</link>
   <description>What shipped in stet, dated. One entry per feature.</description>
   <item>
+    <title>Lighthouse scores for every page</title>
+    <link>https://getstet.xyz/changelog/lighthouse</link>
+    <guid>https://getstet.xyz/changelog/lighthouse</guid>
+    <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+    <description>stet audit lighthouse scores your pages, says who fixes each failing audit, and applies the head fixes for you.</description>
+  </item>
+  <item>
+    <title>Layout changes, and naming for cards and steps</title>
+    <link>https://getstet.xyz/changelog/layout-changes</link>
+    <guid>https://getstet.xyz/changelog/layout-changes</guid>
+    <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
+    <description>check names the keys a removed section left behind, rename --propose suggests new names for text that moved, and the dashboard shows what Push will send.</description>
+  </item>
+  <item>
     <title>Keys named by page and role</title>
     <link>https://getstet.xyz/changelog/key-naming</link>
     <guid>https://getstet.xyz/changelog/key-naming</guid>
